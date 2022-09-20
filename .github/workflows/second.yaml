@@ -17,4 +17,4 @@ jobs:
       - name: "build test"
         run: "dotnet build $Notes_Api_Test"
       - name: "run test"
-        run: "dotnet run --project $Notes_Api_Test"
+        run: "dotnet test $Notes_Api_Test"
