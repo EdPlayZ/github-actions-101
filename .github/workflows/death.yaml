@@ -1,0 +1,14 @@
+name: "GabGab"
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Pain 1"
+        run: "echo 'IS THIS WHAT I LOST TO?!'"
+      - name: "Echo Goodnight"
+        run: "echo 'YOU\'RE GETTING RUSTY MACHINE!'"
