@@ -5,7 +5,7 @@ on:
   push:
 
 jobs:
-  Gabriel Voice Lines:
+  Gabriel_Voice_Lines:
     runs-on: ubuntu-latest
     steps:
       - name: "Pain 1"
