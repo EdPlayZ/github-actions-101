@@ -3,6 +3,7 @@ name: "GabGab"
 on:
   workflow_dispatch:
   push:
+  merge:
 
 jobs:
   Gabriel_Voice_Lines:
@@ -10,5 +11,5 @@ jobs:
     steps:
       - name: "Pain 1"
         run: "echo 'IS THIS WHAT I LOST TO?!'"
-      - name: "Echo Goodnight"
-        run: "echo 'YOU'RE GETTING RUSTY MACHINE!'"
+      - name: "Pain 2"
+        run: "echo 'YOURE GETTING RUSTY MACHINE!'"
