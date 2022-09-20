@@ -3,7 +3,6 @@ name: "GabGab"
 on:
   workflow_dispatch:
   push:
-  merge:
 
 jobs:
   Gabriel_Voice_Lines:
