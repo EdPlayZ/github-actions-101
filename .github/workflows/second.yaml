@@ -17,4 +17,12 @@ jobs:
       - name: "build test"
         run: "dotnet build $Notes_Api_Test"
       - name: "run test"
-        run: "dotnet test $Notes_Api_Test"
+        run: "dotnet test --logger trx $Notes_Api_Test"
+
+      - name: Test Reporter
+        uses: dorny/test-reporter@v1
+        if: success() || failure()
+        with:
+          name: Test Summary
+          path: Notes.Api.Test/TestResults/*.trx
+          reporter: dotnet-trx
